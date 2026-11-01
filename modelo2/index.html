@@ -1,0 +1,738 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MOVE SP | Mobilidade Urbana</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="inicio">
+
+        <a href="#inicio" class="logo">
+            <div class="logo-icon">M</div>
+
+            <div class="logo-text">
+                <h2>MOVE SP</h2>
+                <span>MOBILIDADE URBANA</span>
+            </div>
+        </a>
+
+        <nav class="navigation">
+            <a href="#inicio" class="active">Início</a>
+            <a href="#linhas">Situação das linhas</a>
+            <a href="#paradas">Paradas</a>
+            <a href="#perfil">Perfil</a>
+        </nav>
+
+        <a href="#perfil" class="header-button">
+            Minha conta
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <!-- SEÇÃO INICIAL -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="tag">MOBILIDADE INTELIGENTE</span>
+
+                <h1>
+                    Seu caminho.<br>
+                    <span>Sua cidade.</span>
+                </h1>
+
+                <p>
+                    Encontre linhas, consulte horários e acompanhe
+                    informações do transporte em um só lugar.
+                </p>
+
+                <div class="search-box">
+
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        placeholder="Para onde você deseja ir?"
+                    >
+
+                    <a href="#paradas" class="search-button">
+                        Pesquisar
+                    </a>
+
+                </div>
+
+                <div class="hero-info">
+                    <span>✓ Informações de transporte</span>
+                    <span>✓ Consulte suas linhas</span>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1200&q=85"
+                    alt="Paisagem urbana"
+                >
+
+                <div class="image-card">
+                    <span class="online-dot"></span>
+                    <div>
+                        <strong>MOVE SP</strong>
+                        <small>Mobilidade para todos</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUGESTÕES -->
+        <section class="suggestions section-container">
+
+            <div class="section-heading">
+                <div>
+                    <span class="tag">SEUS DESTINOS</span>
+                    <h2>Sugestões para você</h2>
+                    <p>Acesse rapidamente seus locais favoritos.</p>
+                </div>
+            </div>
+
+            <div class="suggestion-grid">
+
+                <a href="#paradas" class="suggestion-card">
+                    <div class="suggestion-icon">⌂</div>
+                    <div>
+                        <h3>Casa</h3>
+                        <p>Seu endereço favorito</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a href="#paradas" class="suggestion-card">
+                    <div class="suggestion-icon">▣</div>
+                    <div>
+                        <h3>Trabalho</h3>
+                        <p>Seu destino frequente</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a href="#paradas" class="suggestion-card">
+                    <div class="suggestion-icon">⌖</div>
+                    <div>
+                        <h3>Centro</h3>
+                        <p>Região central</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a href="#paradas" class="suggestion-card">
+                    <div class="suggestion-icon">＋</div>
+                    <div>
+                        <h3>Novo destino</h3>
+                        <p>Adicionar localização</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMAÇÕES -->
+        <section class="information">
+
+            <div class="information-content">
+
+                <div>
+                    <span class="tag">ACOMPANHAMENTO</span>
+
+                    <h2>Fique por dentro<br>do seu trajeto.</h2>
+
+                    <p>
+                        Consulte as condições das linhas e fique
+                        informado sobre possíveis alterações
+                        no transporte.
+                    </p>
+
+                    <a href="#linhas" class="primary-button">
+                        Consultar linhas →
+                    </a>
+                </div>
+
+                <div class="information-stats">
+
+                    <div class="stat-card">
+                        <span class="stat-icon">▤</span>
+                        <strong>Linhas</strong>
+                        <small>Consulte operações</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">⌖</span>
+                        <strong>Paradas</strong>
+                        <small>Consulte horários</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">◉</span>
+                        <strong>Alertas</strong>
+                        <small>Acompanhe avisos</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SITUAÇÃO DAS LINHAS -->
+        <section class="section-container lines-section" id="linhas">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="tag">TRANSPORTE</span>
+                    <h2>Situação das linhas</h2>
+                    <p>Confira as condições de funcionamento.</p>
+                </div>
+
+                <span class="update-label">
+                    ● Informações demonstrativas
+                </span>
+
+            </div>
+
+
+            <div class="lines-grid">
+
+                <article class="line-card warning-line">
+
+                    <div class="line-top">
+                        <span class="line-number red">03</span>
+                        <span class="status warning">Atenção</span>
+                    </div>
+
+                    <h3>Linha 3 - Vermelha</h3>
+
+                    <p>Falha operacional</p>
+
+                    <div class="line-footer">
+                        <span>Última atualização</span>
+                        <strong>13:30</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="line-card">
+
+                    <div class="line-top">
+                        <span class="line-number blue">01</span>
+                        <span class="status normal">Normal</span>
+                    </div>
+
+                    <h3>Linha 1 - Azul</h3>
+
+                    <p>Operação normal</p>
+
+                    <div class="line-footer">
+                        <span>Última atualização</span>
+                        <strong>13:30</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="line-card">
+
+                    <div class="line-top">
+                        <span class="line-number green">02</span>
+                        <span class="status normal">Normal</span>
+                    </div>
+
+                    <h3>Linha 2 - Verde</h3>
+
+                    <p>Operação normal</p>
+
+                    <div class="line-footer">
+                        <span>Última atualização</span>
+                        <strong>13:30</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="line-card">
+
+                    <div class="line-top">
+                        <span class="line-number yellow">04</span>
+                        <span class="status normal">Normal</span>
+                    </div>
+
+                    <h3>Linha 4 - Amarela</h3>
+
+                    <p>Operação normal</p>
+
+                    <div class="line-footer">
+                        <span>Última atualização</span>
+                        <strong>13:30</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="line-card">
+
+                    <div class="line-top">
+                        <span class="line-number ruby">07</span>
+                        <span class="status normal">Normal</span>
+                    </div>
+
+                    <h3>Linha 7 - Rubi</h3>
+
+                    <p>Operação normal</p>
+
+                    <div class="line-footer">
+                        <span>Última atualização</span>
+                        <strong>13:30</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="line-card">
+
+                    <div class="line-top">
+                        <span class="line-number coral">11</span>
+                        <span class="status normal">Normal</span>
+                    </div>
+
+                    <h3>Linha 11 - Coral</h3>
+
+                    <p>Operação normal</p>
+
+                    <div class="line-footer">
+                        <span>Última atualização</span>
+                        <strong>13:30</strong>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARADAS -->
+        <section class="stops-section" id="paradas">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="tag">LOCALIZAÇÃO</span>
+                        <h2>Paradas próximas</h2>
+                        <p>Consulte os pontos e horários disponíveis.</p>
+                    </div>
+
+                    <a href="#paradas" class="outline-button">
+                        Ver todas as paradas →
+                    </a>
+
+                </div>
+
+
+                <div class="stops-grid">
+
+                    <article class="stop-card">
+
+                        <div class="stop-icon">⌖</div>
+
+                        <div class="stop-info">
+                            <span class="distance">150 METROS</span>
+                            <h3>Parada Catedral da Sé</h3>
+                            <p>São Paulo - SP</p>
+                        </div>
+
+                        <div class="bus-times">
+
+                            <div>
+                                <span>Ônibus 175T-10</span>
+                                <strong>3 min</strong>
+                            </div>
+
+                            <div>
+                                <span>Ônibus 1511-10</span>
+                                <strong>7 min</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="stop-card">
+
+                        <div class="stop-icon">⌖</div>
+
+                        <div class="stop-info">
+                            <span class="distance">300 METROS</span>
+                            <h3>Estação da Sé</h3>
+                            <p>São Paulo - SP</p>
+                        </div>
+
+                        <div class="bus-times">
+
+                            <div>
+                                <span>Linha 1 - Azul</span>
+                                <strong>2 min</strong>
+                            </div>
+
+                            <div>
+                                <span>Linha 3 - Vermelha</span>
+                                <strong>5 min</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="stop-card">
+
+                        <div class="stop-icon">⌖</div>
+
+                        <div class="stop-info">
+                            <span class="distance">450 METROS</span>
+                            <h3>Parada Pátio do Colégio</h3>
+                            <p>São Paulo - SP</p>
+                        </div>
+
+                        <div class="bus-times">
+
+                            <div>
+                                <span>Ônibus 5410-10</span>
+                                <strong>8 min</strong>
+                            </div>
+
+                            <div>
+                                <span>Ônibus 8011-10</span>
+                                <strong>12 min</strong>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERFIL -->
+        <section class="section-container profile-section" id="perfil">
+
+            <div class="section-heading">
+                <div>
+                    <span class="tag">ÁREA DO USUÁRIO</span>
+                    <h2>Meu perfil</h2>
+                    <p>Gerencie suas informações e preferências.</p>
+                </div>
+            </div>
+
+
+            <div class="profile-layout">
+
+                <div class="profile-card">
+
+                    <div class="avatar">JS</div>
+
+                    <h3>João Silva</h3>
+                    <p>joao.silva@email.com</p>
+
+                    <span class="account-status">
+                        ● Conta ativa
+                    </span>
+
+                    <a href="#login" class="primary-button">
+                        Editar perfil
+                    </a>
+
+                </div>
+
+
+                <div class="profile-menu">
+
+                    <a href="#login" class="profile-option">
+                        <span>▤</span>
+                        <div>
+                            <strong>Meus cartões / Saldo</strong>
+                            <small>Consulte seus cartões e informações.</small>
+                        </div>
+                        <b>→</b>
+                    </a>
+
+                    <a href="#login" class="profile-option">
+                        <span>♧</span>
+                        <div>
+                            <strong>Notificações e alertas</strong>
+                            <small>Gerencie seus avisos.</small>
+                        </div>
+                        <b>→</b>
+                    </a>
+
+                    <a href="#politicas" class="profile-option">
+                        <span>▣</span>
+                        <div>
+                            <strong>Termos de uso e privacidade</strong>
+                            <small>Consulte as políticas do aplicativo.</small>
+                        </div>
+                        <b>→</b>
+                    </a>
+
+                    <a href="#login" class="profile-option">
+                        <span>ⓘ</span>
+                        <div>
+                            <strong>Ajuda e suporte</strong>
+                            <small>Encontre informações e atendimento.</small>
+                        </div>
+                        <b>→</b>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACESSO / LOGIN -->
+        <section class="login-section" id="login">
+
+            <div class="login-content">
+
+                <div>
+                    <span class="tag">FAÇA PARTE</span>
+
+                    <h2>Tenha uma experiência<br>
+                        <span>mais completa.</span>
+                    </h2>
+
+                    <p>
+                        Acesse sua conta para gerenciar seus dados
+                        e personalizar sua experiência.
+                    </p>
+                </div>
+
+                <div class="login-actions">
+
+                    <a href="#inicio" class="primary-button">
+                        Fazer login
+                    </a>
+
+                    <a href="#inicio" class="outline-button">
+                        Criar conta
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- POLÍTICAS -->
+        <section class="policies-section" id="politicas">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="tag">INFORMAÇÕES LEGAIS</span>
+                        <h2>Transparência e segurança</h2>
+                        <p>Conheça as regras e condições de utilização.</p>
+                    </div>
+                </div>
+
+
+                <div class="policies-grid">
+
+                    <article class="policy-card">
+                        <span>01</span>
+                        <h3>Termos de uso</h3>
+                        <p>
+                            Conheça as condições para utilizar
+                            os serviços e recursos do MOVE SP.
+                        </p>
+                        <a href="#termos">Ler documento →</a>
+                    </article>
+
+                    <article class="policy-card">
+                        <span>02</span>
+                        <h3>Política de privacidade</h3>
+                        <p>
+                            Saiba como os dados pessoais são
+                            tratados e protegidos.
+                        </p>
+                        <a href="#privacidade">Ler documento →</a>
+                    </article>
+
+                    <article class="policy-card">
+                        <span>03</span>
+                        <h3>Política de cookies</h3>
+                        <p>
+                            Entenda como os cookies e tecnologias
+                            semelhantes podem ser utilizados.
+                        </p>
+                        <a href="#cookies">Ler documento →</a>
+                    </article>
+
+                </div>
+
+
+                <!-- DOCUMENTOS -->
+                <div class="documents">
+
+                    <article class="document" id="termos">
+
+                        <h3>Termos de uso</h3>
+
+                        <p>
+                            O MOVE SP é uma plataforma demonstrativa
+                            de mobilidade urbana. Ao utilizar o site,
+                            o usuário concorda em respeitar as condições
+                            de utilização dos serviços disponibilizados.
+                        </p>
+
+                        <p>
+                            As informações de linhas, horários e paradas
+                            apresentadas nesta versão são ilustrativas
+                            e não representam dados oficiais em tempo real.
+                        </p>
+
+                    </article>
+
+
+                    <article class="document" id="privacidade">
+
+                        <h3>Política de privacidade</h3>
+
+                        <p>
+                            A privacidade dos usuários deve ser respeitada.
+                            Qualquer coleta de dados pessoais deverá
+                            possuir finalidade definida, base legal
+                            adequada e medidas de segurança.
+                        </p>
+
+                        <p>
+                            O tratamento de dados deverá respeitar
+                            a Lei Geral de Proteção de Dados (LGPD).
+                        </p>
+
+                    </article>
+
+
+                    <article class="document" id="cookies">
+
+                        <h3>Política de cookies</h3>
+
+                        <p>
+                            Cookies são pequenos arquivos que podem
+                            ser utilizados para melhorar a experiência
+                            de navegação e armazenar preferências.
+                        </p>
+
+                        <p>
+                            O usuário deverá receber informações
+                            claras sobre sua utilização e ter acesso
+                            às opções de consentimento aplicáveis.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="policy-notice">
+                    <strong>Importante:</strong>
+                    os documentos acima são textos demonstrativos
+                    para o projeto. Antes de disponibilizar o site
+                    ao público, é necessário adequar as políticas
+                    às funcionalidades reais e revisar os documentos
+                    conforme a legislação aplicável.
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <a href="#inicio" class="logo">
+                <div class="logo-icon">M</div>
+
+                <div class="logo-text">
+                    <h2>MOVE SP</h2>
+                    <span>MOBILIDADE URBANA</span>
+                </div>
+            </a>
+
+            <p>
+                Conectando pessoas e facilitando caminhos.
+            </p>
+
+            <a href="#politicas" class="footer-policy-button">
+                Consultar políticas e termos
+            </a>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>© 2026 MOVE SP. Todos os direitos reservados.</span>
+
+            <div>
+                <a href="#termos">Termos de uso</a>
+                <a href="#privacidade">Privacidade</a>
+                <a href="#cookies">Cookies</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
